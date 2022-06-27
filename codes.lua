@@ -1,0 +1,22 @@
+local folder = Instance.new("Folder")
+folder.Name = "Codes"
+folder.Parent = game.Workspace
+
+local value = Instance.new("Vector3Value")
+value.Name = "RELLYrellcoins!"
+value.Parent = folder
+local value = Instance.new("Vector3Value")
+value.Name = "ShinobiLife3!"
+value.Parent = folder
+local value = Instance.new("Vector3Value")
+value.Name = "RyujiMomesHot!"
+value.Parent = folder
+local value = Instance.new("Vector3Value")
+value.Name = "c0434dE!"
+value.Parent = folder
+local value = Instance.new("Vector3Value")
+value.Name = "fansAppreciationN!"
+value.Parent = folder
+local value = Instance.new("Vector3Value")
+value.Name = "onehunnet!"
+value.Parent = folder
