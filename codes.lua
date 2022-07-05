@@ -20,3 +20,6 @@ value.Parent = folder
 local value = Instance.new("Vector3Value")
 value.Name = "onehunnet!"
 value.Parent = folder
+local value = Instance.new("Vector3Value")
+value.Name = "ShinobiKenobi!"
+value.Parent = folder
