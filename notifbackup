@@ -740,7 +740,7 @@ function Notification.new(notifType: string, heading: string, body: string, auto
 
     local function openNotif(): nil
         local function playOpenNotifTween(): nil
-            ts:Create(notif.templateFrame, TweenInfo.new(.25), {Position = UDim2.new(0,0,0,0)}):Play()
+            ts:Create(notif.templateFrame, TweenInfo.new(.05), {Position = UDim2.new(0,0,0,0)}):Play()
         end
 
         openSound:Play()
@@ -750,7 +750,7 @@ function Notification.new(notifType: string, heading: string, body: string, auto
     local function closeNotif(): nil
         coroutine.wrap(function()
             local function playCloseNotifTween(): nil
-                local closeTween = ts:Create(notif.templateFrame, TweenInfo.new(.25), {Position = UDim2.new(1,0,0,0)})
+                local closeTween = ts:Create(notif.templateFrame, TweenInfo.new(.05), {Position = UDim2.new(1,0,0,0)})
                 closeTween:Play()
                 closeTween.Completed:Wait()
             end
@@ -805,7 +805,7 @@ end
 function Notification:deleteTimeout(waitTime: number): nil
     coroutine.wrap(function()
         if not self.Instance or not self.Instance:FindFirstChild("templateFrame") then return end
-        local closeTween = ts:Create(self.Instance.templateFrame, TweenInfo.new(.25), {Position = UDim2.new(1,0,0,0)})
+        local closeTween = ts:Create(self.Instance.templateFrame, TweenInfo.new(.05), {Position = UDim2.new(1,0,0,0)})
         waitTime = waitTime or 3
         task.wait(waitTime)
         if not self.Instance or not self.Instance:FindFirstChild("templateFrame") then return end
@@ -819,7 +819,7 @@ end
 function Notification:delete()
     coroutine.wrap(function()
         if not self.Instance or not self.Instance:FindFirstChild("templateFrame") then return end
-        local closeTween = ts:Create(self.Instance.templateFrame, TweenInfo.new(.25), {Position = UDim2.new(1,0,0,0)})
+        local closeTween = ts:Create(self.Instance.templateFrame, TweenInfo.new(.05), {Position = UDim2.new(1,0,0,0)})
         closeTween:Play()
         closeTween.Completed:Wait()
         if not self.Instance then return end
