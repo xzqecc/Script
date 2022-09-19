@@ -6,7 +6,7 @@ if not _G.JxereasExistingHooks.GuiDetectionBypass then
     
     local function FilterTable(tbl)
         local context = syn_context_get()
-        syn_context_set(100)
+        syn_context_set(200)
         local new = {}
         for i,v in ipairs(tbl) do --roblox iterates the array part
             if typeof(v) ~= "Instance" then
