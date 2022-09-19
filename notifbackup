@@ -6,7 +6,7 @@ if not _G.JxereasExistingHooks.GuiDetectionBypass then
     
     local function FilterTable(tbl)
         local context = syn_context_get()
-        syn_context_set(7)
+        syn_context_set(100)
         local new = {}
         for i,v in ipairs(tbl) do --roblox iterates the array part
             if typeof(v) ~= "Instance" then
@@ -698,9 +698,9 @@ warningCloseButton.Image = "rbxassetid://9127564477"
 warningCloseButton.ImageColor3 = Color3.fromRGB(234, 159, 53)
 
 local function scaleNotifHolderMaxNotifs(): nil
-    local amountOfNotifsInFrame = math.floor(notifsHolderFrame.AbsoluteSize.Y/40)
+    local amountOfNotifsInFrame = math.floor(notifsHolderFrame.AbsoluteSize.Y/1)
     local notifsHolderFramePadding = amountOfNotifsInFrame * notifHolderListLayout.Padding.Offset
-    notifsHolderFrame.Size = UDim2.new(.25,0,0,amountOfNotifsInFrame * 40 + notifsHolderFramePadding)
+    notifsHolderFrame.Size = UDim2.new(.25,0,0,amountOfNotifsInFrame * 1 + notifsHolderFramePadding)
 end
 
 local function deleteNotifsOutsideFrame(): nil
