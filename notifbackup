@@ -203,7 +203,7 @@ notifsHolderFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 notifsHolderFrame.BackgroundTransparency = 1
 notifsHolderFrame.BorderSizePixel = 0
 notifsHolderFrame.ClipsDescendants = true
-notifsHolderFrame.Position = UDim2.new(1, 0, 1, -50)
+notifsHolderFrame.Position = UDim2.new(1, 0, 1, -75)
 notifsHolderFrame.Size = UDim2.fromScale(0.25, 0.3)
 
 notifHolderListLayout.Name = "notifHolderListLayout"
