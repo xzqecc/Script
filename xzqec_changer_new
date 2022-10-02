@@ -1,5 +1,5 @@
 local MessageBox = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/NotificationGUI/main/source.lua"))()
-MessageBox.Show({Position = UDim2.new(0.5,0,0.5,0), Text = "New Script", Description = "Would you like to join the Discord?", MessageBoxIcon = "Info", MessageBoxButtons = "YesNo", Result = function(res)
+MessageBox.Show({Position = UDim2.new(0.5,0,0.5,0), Text = "New Script", Description = "Would you like to join the Discord?", MessageBoxIcon = "Warning", MessageBoxButtons = "YesNo", Result = function(res)
    if (res == "Yes") and syn.request then
        MessageBox.Show({MessageBoxButtons = "OK", Description = "LEAVE THE OLD DISCORD!!", Text = "Thank You!"})
            syn.request(
